@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+	  justify-content: center;
+	  align-items: center;
+	  width: 30px; height: 30px;
+	  border-radius: 50%;
+	  background: red;
+	  position: absolute;
+	  animation-name: testAnimation;
+	  animation-delay: 2s;
+	}
+.abc{
+	animation-duration: 5s; 
+	animation-iteration-count: infinite; 
+	animation-direction: alternate; 
+	animation-timing-function: linear;
+	}
+.bcd{
+	animation-duration: 5s;  
+	animation-iteration-count: infinite; 
+	animation-direction: alternate-reverse; 
+    animation-timing-function: linear;
+	}
+@keyframes testAnimation{
+0%   {
+	left: 0%; top: 50%;width: 50px; height: 50px;
+	background: radial-gradient(circle at 80px 50px, orange, black); 
+	visibility: visible;
+	}
+25%  {
+	left: 25%; top: 50%; width: 50px; height: 50px;
+	background: radial-gradient(circle at 50px 80px, pink, magenta); 
+	visibility: visible;
+	}
+50%  {
+	left: 50%; top: 50%; width: 50px; height: 50px;
+	background: radial-gradient(circle at 30px 30px, cyan, blue); 
+	visibility: visible; animation-timing-function: linear;
+	}
+75%  {
+	left: 75%; top: 50%; width: 50px; height: 50px;
+	background: radial-gradient(circle at 60px 60px, green, black); 
+	visibility: visible;
+	}
+100% {
+	left: 100%; top: 50%; width: 50px; height: 50px; 
+	background: radial-gradient(circle at 80px 50px, orange, black); 
+	visibility: visible;
+	}
+}
+</style>
+</head>
+<body>
+<div class="abc" ></div>
+<div class="bcd"></div>
+</body>
